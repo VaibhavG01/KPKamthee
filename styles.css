@@ -1,0 +1,235 @@
+/* Image */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    /* Set a maximum width for the carousel */
+    max-height: 90vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carousel-images img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-pagination {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.carousel-pagination span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-pagination .active {
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        max-width: 90%;
+        /* Adjust the maximum width for smaller screens */
+        max-height: 25vh;
+    }
+}
+
+/* Welcome */
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+}
+.welcome-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.welcome-message {
+    font-size: 1.25rem;
+}
+
+/* News */
+.news-section {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+.news-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: left;
+}
+.news-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.news-card p {
+    font-size: 1rem;
+    color: #666;
+}
+.news-card .date {
+    font-size: 0.875rem;
+    color: #999;
+    margin-top: 0.5rem;
+}
+
+
+/* Events */
+.events-section {
+    padding: 2rem;
+    background-color: #ffffff;
+}
+.events-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: left;
+}
+.event-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.event-card p {
+    font-size: 1rem;
+    color: #666;
+}
+.event-card .date {
+    font-size: 0.875rem;
+    color: #999;
+    margin-top: 0.5rem;
+}
+.event-card .location {
+    font-size: 0.875rem;
+    color: #999;
+    margin-top: 0.5rem;
+}
+
+
+/* Department */
+.department {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #f0f0f0; */
+}
+
+.department h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.cards {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* background-color: #f0f0f0; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    /* height: 230px; */
+    object-fit: cover;
+    padding: 5px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
